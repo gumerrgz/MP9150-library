@@ -45,3 +45,4 @@ You can use the files calibration.py and calculateAttitude.py.
 ## Acknowledgments
 
 * MPU9150.py was created editing FaBo9Axis_MPU9250 library to fit the MPU9150 (https://github.com/FaBoPlatform/FaBo9AXIS-MPU9250-Python)
+* madgwick.py implements Madgwicks AHRS and IMU algorithms in Python from the open source project in C developed by xioTechnologies (http://x-io.co.uk/open-source-ahrs-with-x-imu/)
