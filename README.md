@@ -20,22 +20,21 @@ Python 2.7 and Pygame installed
 * calibration.py - is used to calibrate the sensor
 
 ### Calibrating the sensor
-It is important to emphasize that the sensor needs to be calibrated first to get the correct measurements. Both, the gyroscope and the magnetometer have little offsets that need to be taken into consideration.
-\n
-To get the gyroscope offsets, it is necessary to fix the sensor and calculate the average of multiple measurements. 
-\n
-In order to get the magnetometer offsets it is necessary to calculate the average of the averages of the multiple measurements, this is possible by fixing the sensor in four different positions, performing a 180 degree turn from the last sensing using only two axes.
-\n
-It is necessary to create a file named MPUoffsets.txt to store the averages of the offsets with the next structure:
-\n
-gx gy gz
-\n
-mx my mz
-\n
-Where gx, gy and gz are the gyroscopes offsets (float); and mx, my and mz are the magnetometer offsets (int). They are separated with spaces. \n
-\n \n
-A more detailed procedure is localized on the Simple Manual Magnetometer Calibration (https://www.instructables.com/id/Simple-Manual-Magnetometer-Calibration/). 
-\n
+It is important to emphasize that the sensor needs to be calibrated first to get the correct measurements. Both, the gyroscope and the magnetometer have little offsets that need to be taken into consideration.  
+
+To get the gyroscope offsets, it is necessary to fix the sensor and calculate the average of multiple measurements.  
+
+In order to get the magnetometer offsets it is necessary to calculate the average of the averages of the multiple measurements, this is possible by fixing the sensor in four different positions, performing a 180 degree turn from the last sensing using only two axes.  
+
+It is necessary to create a file named MPUoffsets.txt to store the averages of the offsets with the next structure:  
+
+gx gy gz  
+mx my mz  
+
+Where gx, gy and gz are the gyroscopes offsets (float); and mx, my and mz are the magnetometer offsets (int). They are separated with spaces.  
+  
+A more detailed procedure is localized on the Simple Manual Magnetometer Calibration (https://www.instructables.com/id/Simple-Manual-Magnetometer-Calibration/).  
+
 You can use the files calibration.py and calculateAttitude.py.
 
 ## Authors
